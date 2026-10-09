@@ -24,5 +24,5 @@ git add -A
 git -c user.name="$(git -C "$ROOT" config user.name)" -c user.email="$(git -C "$ROOT" config user.email)" \
   commit -q -m "Deploy $(date -u +%Y-%m-%dT%H:%M:%SZ)"
 # FORCE=1 nur als Notfall (ersetzt die gh-pages-Historie; der Branch enthält nur Build-Dateien).
-git push -q ${FORCE:+--force} origin gh-pages
+git push -q ${FORCE:+--force} "$REMOTE_URL" gh-pages
 echo "Veröffentlicht: Branch gh-pages ($(git rev-parse --short HEAD))"
