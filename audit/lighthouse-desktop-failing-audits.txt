@@ -1,5 +1,5 @@
-total-blocking-time (0.63) 280 ms
-max-potential-fid (0.22) 370 ms
+total-blocking-time (0.78) 210 ms
+max-potential-fid (0.36) 300 ms
 unused-javascript (0) Est savings of 24 KiB
 cache-insight (0) Est savings of 482 KiB
 forced-reflow-insight (0) 

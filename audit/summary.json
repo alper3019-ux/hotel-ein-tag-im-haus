@@ -1,28 +1,28 @@
 {
   "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/",
-  "date": "2026-10-09T11:23:11.818Z",
+  "date": "2026-10-09T11:28:17.923Z",
   "lighthouse": {
     "mobile": {
       "runs": 3,
       "scoresMedian": {
-        "performance": 89,
+        "performance": 85,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100,
         "agentic-browsing": 100
       },
       "performancePerRun": [
-        87,
-        90,
-        89
+        64,
+        85,
+        87
       ],
       "metricsMedian": {
-        "fcp": 1230,
-        "lcp": 2534.5,
-        "tbt": 309,
+        "fcp": 1230.33,
+        "lcp": 2729,
+        "tbt": 373,
         "cls": 0.002,
-        "si": 3281.719,
-        "bytes": 573850
+        "si": 3750.526,
+        "bytes": 573817
       }
     },
     "desktop": {
@@ -35,17 +35,17 @@
         "agentic-browsing": 100
       },
       "performancePerRun": [
-        88,
-        91,
-        99
+        93,
+        90,
+        91
       ],
       "metricsMedian": {
-        "fcp": 350.378,
-        "lcp": 675,
-        "tbt": 240,
+        "fcp": 350,
+        "lcp": 680.5,
+        "tbt": 234,
         "cls": 0,
-        "si": 929.339,
-        "bytes": 547702
+        "si": 866.749,
+        "bytes": 547692
       }
     }
   },
@@ -62,7 +62,7 @@
     }
   },
   "transfer": {
-    "totalBytes": 441843,
+    "totalBytes": 441806,
     "requests": 14,
     "thirdPartyHosts": [],
     "list": [
@@ -70,99 +70,99 @@
         "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/",
         "type": "document",
         "status": 200,
-        "transfer": 9253,
+        "transfer": 9248,
         "encoding": "gzip"
-      },
-      {
-        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/assets/fraunces-latin-wght-normal-ukD16Tqj.woff2",
-        "type": "font",
-        "status": 200,
-        "transfer": 36811,
-        "encoding": ""
       },
       {
         "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/assets/inter-latin-wght-normal-Dx4kXJAl.woff2",
         "type": "font",
         "status": 200,
-        "transfer": 48429,
+        "transfer": 48439,
         "encoding": ""
       },
       {
         "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/assets/main-MMO-uRkP.css",
         "type": "stylesheet",
         "status": 200,
-        "transfer": 5487,
+        "transfer": 5636,
         "encoding": "gzip"
       },
       {
-        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/assets/fraunces-latin-wght-italic-Py8at3oI.woff2",
+        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/assets/fraunces-latin-wght-normal-ukD16Tqj.woff2",
         "type": "font",
         "status": 200,
-        "transfer": 45849,
+        "transfer": 36788,
         "encoding": ""
       },
       {
         "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/photos/hero-1440.avif",
         "type": "image",
         "status": 200,
-        "transfer": 110076,
+        "transfer": 110079,
         "encoding": ""
       },
       {
-        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/assets/main-BTqGpTZh.js",
+        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/assets/fraunces-latin-wght-italic-Py8at3oI.woff2",
+        "type": "font",
+        "status": 200,
+        "transfer": 45821,
+        "encoding": ""
+      },
+      {
+        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/assets/main-BT6sarNS.js",
         "type": "script",
         "status": 200,
-        "transfer": 58330,
+        "transfer": 58194,
         "encoding": "gzip"
-      },
-      {
-        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/photos/morgen-480.avif",
-        "type": "image",
-        "status": 200,
-        "transfer": 10464,
-        "encoding": ""
       },
       {
         "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/photos/fruehstueck-480.avif",
         "type": "image",
         "status": 200,
-        "transfer": 25447,
+        "transfer": 25418,
         "encoding": ""
       },
       {
         "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/photos/berg-480.avif",
         "type": "image",
         "status": 200,
-        "transfer": 26501,
+        "transfer": 26676,
+        "encoding": ""
+      },
+      {
+        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/photos/morgen-480.avif",
+        "type": "image",
+        "status": 200,
+        "transfer": 10324,
         "encoding": ""
       },
       {
         "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/photos/tisch-480.avif",
         "type": "image",
         "status": 200,
-        "transfer": 13314,
-        "encoding": ""
-      },
-      {
-        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/photos/stille-480.avif",
-        "type": "image",
-        "status": 200,
-        "transfer": 35574,
-        "encoding": ""
-      },
-      {
-        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/photos/spa-480.avif",
-        "type": "image",
-        "status": 200,
-        "transfer": 15891,
+        "transfer": 13339,
         "encoding": ""
       },
       {
         "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/favicon.svg",
         "type": "other",
         "status": 200,
-        "transfer": 417,
+        "transfer": 392,
         "encoding": "gzip"
+      },
+      {
+        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/photos/stille-480.avif",
+        "type": "image",
+        "status": 200,
+        "transfer": 35620,
+        "encoding": ""
+      },
+      {
+        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/photos/spa-480.avif",
+        "type": "image",
+        "status": 200,
+        "transfer": 15832,
+        "encoding": ""
       }
     ]
   }

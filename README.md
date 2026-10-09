@@ -44,7 +44,20 @@ bash scripts/deploy-gh-pages.sh   # Build + normaler Push auf gh-pages (kein Act
 
 Lighthouse 13 (Median aus 3 Läufen, Chrome headless mit SwiftShader auf einer geteilten Linux-Box – die Performance-Werte schwanken deutlich zwischen Läufen) und axe-core 4 (WCAG 2.0/2.1/2.2 A+AA + Best Practices, nach Durchscrollen).
 
-<!--MESSUNGEN-->
+**Live (GitHub Pages, gemessen 09.10.2026 gegen ~13:40 Uhr MESZ):**
+
+| | Performance | Accessibility | Best Practices | SEO | FCP | LCP | TBT | CLS |
+|---|---|---|---|---|---|---|---|---|
+| Mobile | 85 (Läufe 64/85/87) | 100 | 100 | 100 | 1,2 s | 2,7 s | 373 ms | 0,002 |
+| Desktop | 91 (Läufe 93/90/91) | 100 | 100 | 100 | 0,35 s | 0,68 s | 234 ms | 0 |
+
+- axe-core: **0 Verstöße** (Desktop und Mobile).
+- Erstaufruf: 14 Requests, ~442 KB übertragen, **0 Drittanbieter**. three.js-Chunk (558 KB, 142 KB gzip) lädt erst bei Interaktion in der Nähe des Tag-Abschnitts.
+- Screenshot-Lauf (Desktop, Mobile, Reduced Motion): keine Konsolenfehler/-warnungen, keine HTTP-Fehler; Buchungsvalidierung und Demo-Meldung geprüft.
+- Verlauf lokal: anfangs Mobile 55 / Desktop 51 (three.js beim Laden, Font-Layout-Shift) → nach den Korrekturen im CHANGELOG lokal Mobile 75 / Desktop 78–95.
+- Rohdaten: `audit/summary.json`, Liste nicht bestandener Einzel-Audits in `audit/*failing-audits.txt` (u. a. TBT durch GSAP/Lenis-Initialisierung, Cache-Header von GitHub Pages nicht steuerbar).
+
+Screenshots (live): `screens/01-desktop-hero.png`, `screens/02-desktop-ein-tag-17uhr-mid-scroll.png`, `screens/03-mobile-hero.png` und weitere (nicht im Repo, nur im Projektordner/Zip).
 
 ## Recherche und Quellen (alle selbst geöffnet)
 
