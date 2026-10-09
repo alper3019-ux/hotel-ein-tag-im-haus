@@ -183,7 +183,7 @@ export function createValley(canvas, { mobile = false, onFirstFrame } = {}) {
   scene.add(terrain);
 
   /* See */
-  const waterMat = new MeshStandardMaterial({ color: 0x41606e, roughness: 0.08, metalness: 0.35, transparent: true, opacity: 0.94 });
+  const waterMat = new MeshStandardMaterial({ color: 0x41606e, roughness: 0.35, metalness: 0, transparent: true, opacity: 0.94 });
   const water = new Mesh(new CircleGeometry(1, 64), waterMat);
   water.rotation.x = -Math.PI / 2;
   water.scale.set(LAKE.r + 9, (LAKE.r + 9) / 1.35, 1);
@@ -326,7 +326,7 @@ export function createValley(canvas, { mobile = false, onFirstFrame } = {}) {
     const mAz = degToRad(-28), mEl = degToRad(22);
     moon.position.set(Math.sin(mAz) * Math.cos(mEl), Math.sin(mEl), -Math.cos(mAz) * Math.cos(mEl)).multiplyScalar(3300);
     moon.lookAt(camera.position);
-    waterMat.color.copy(fog).multiplyScalar(0.55).lerp(tmpA.set('#2c4a56'), 0.5);
+    waterMat.color.copy(fog).multiplyScalar(0.8).lerp(tmpA.set('#4f7a8a'), 0.45);
     glow.intensity = (h >= 17.5 ? smoothstep(h, 17.5, 20) : 0) * (h > 22 ? lerp(1, 0.35, clamp(h - 22, 0, 1)) : 1) * 260;
     lightsFor(h);
     // Kamera: langsame Fahrt über den Tag

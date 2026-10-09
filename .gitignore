@@ -1,3 +1,7 @@
 node_modules
 dist
 .DS_Store
+screens/
+audit/*
+!audit/summary.json
+!audit/*failing-audits.txt

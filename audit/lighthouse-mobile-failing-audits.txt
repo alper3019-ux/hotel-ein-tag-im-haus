@@ -1,0 +1,11 @@
+largest-contentful-paint (0.86) 2.7 s
+speed-index (0.65) 4.9 s
+total-blocking-time (0.82) 270 ms
+max-potential-fid (0.32) 320 ms
+unused-javascript (0) Est savings of 26 KiB
+cache-insight (0) Est savings of 363 KiB
+forced-reflow-insight (0) 
+image-delivery-insight (0) Est savings of 15 KiB
+lcp-breakdown-insight (0) 
+network-dependency-tree-insight (0) 
+render-blocking-insight (0) Est savings of 150 ms

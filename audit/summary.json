@@ -1,0 +1,169 @@
+{
+  "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/",
+  "date": "2026-10-09T11:23:11.818Z",
+  "lighthouse": {
+    "mobile": {
+      "runs": 3,
+      "scoresMedian": {
+        "performance": 89,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "performancePerRun": [
+        87,
+        90,
+        89
+      ],
+      "metricsMedian": {
+        "fcp": 1230,
+        "lcp": 2534.5,
+        "tbt": 309,
+        "cls": 0.002,
+        "si": 3281.719,
+        "bytes": 573850
+      }
+    },
+    "desktop": {
+      "runs": 3,
+      "scoresMedian": {
+        "performance": 91,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "performancePerRun": [
+        88,
+        91,
+        99
+      ],
+      "metricsMedian": {
+        "fcp": 350.378,
+        "lcp": 675,
+        "tbt": 240,
+        "cls": 0,
+        "si": 929.339,
+        "bytes": 547702
+      }
+    }
+  },
+  "axe": {
+    "desktop": {
+      "violations": 0,
+      "nodes": 0,
+      "list": []
+    },
+    "mobile": {
+      "violations": 0,
+      "nodes": 0,
+      "list": []
+    }
+  },
+  "transfer": {
+    "totalBytes": 441843,
+    "requests": 14,
+    "thirdPartyHosts": [],
+    "list": [
+      {
+        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/",
+        "type": "document",
+        "status": 200,
+        "transfer": 9253,
+        "encoding": "gzip"
+      },
+      {
+        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/assets/fraunces-latin-wght-normal-ukD16Tqj.woff2",
+        "type": "font",
+        "status": 200,
+        "transfer": 36811,
+        "encoding": ""
+      },
+      {
+        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/assets/inter-latin-wght-normal-Dx4kXJAl.woff2",
+        "type": "font",
+        "status": 200,
+        "transfer": 48429,
+        "encoding": ""
+      },
+      {
+        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/assets/main-MMO-uRkP.css",
+        "type": "stylesheet",
+        "status": 200,
+        "transfer": 5487,
+        "encoding": "gzip"
+      },
+      {
+        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/assets/fraunces-latin-wght-italic-Py8at3oI.woff2",
+        "type": "font",
+        "status": 200,
+        "transfer": 45849,
+        "encoding": ""
+      },
+      {
+        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/photos/hero-1440.avif",
+        "type": "image",
+        "status": 200,
+        "transfer": 110076,
+        "encoding": ""
+      },
+      {
+        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/assets/main-BTqGpTZh.js",
+        "type": "script",
+        "status": 200,
+        "transfer": 58330,
+        "encoding": "gzip"
+      },
+      {
+        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/photos/morgen-480.avif",
+        "type": "image",
+        "status": 200,
+        "transfer": 10464,
+        "encoding": ""
+      },
+      {
+        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/photos/fruehstueck-480.avif",
+        "type": "image",
+        "status": 200,
+        "transfer": 25447,
+        "encoding": ""
+      },
+      {
+        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/photos/berg-480.avif",
+        "type": "image",
+        "status": 200,
+        "transfer": 26501,
+        "encoding": ""
+      },
+      {
+        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/photos/tisch-480.avif",
+        "type": "image",
+        "status": 200,
+        "transfer": 13314,
+        "encoding": ""
+      },
+      {
+        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/photos/stille-480.avif",
+        "type": "image",
+        "status": 200,
+        "transfer": 35574,
+        "encoding": ""
+      },
+      {
+        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/photos/spa-480.avif",
+        "type": "image",
+        "status": 200,
+        "transfer": 15891,
+        "encoding": ""
+      },
+      {
+        "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/favicon.svg",
+        "type": "other",
+        "status": 200,
+        "transfer": 417,
+        "encoding": "gzip"
+      }
+    ]
+  }
+}
