@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alper3019-ux.github.io/hotel-ein-tag-im-haus/sitemap.xml
