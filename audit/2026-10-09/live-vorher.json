@@ -1,0 +1,157 @@
+{
+  "url": "https://alper3019-ux.github.io/hotel-ein-tag-im-haus/",
+  "date": "2026-10-09T12:14:50.276Z",
+  "method": "Lighthouse 13 Node-API, 3 Läufe je Formfaktor, Median; axe-core nach Scroll; Playwright-Chrome",
+  "lighthouse": {
+    "mobile": {
+      "runs": [
+        {
+          "cat": {
+            "performance": 77,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "lcp": 3042.526,
+          "cls": 0,
+          "tbt": 401.5,
+          "fcp": 1849.0259999999998,
+          "si": 6754.094435070205,
+          "bytes": 414640
+        },
+        {
+          "cat": {
+            "performance": 81,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "lcp": 2779,
+          "cls": 0.002444897531332632,
+          "tbt": 542,
+          "fcp": 1230,
+          "si": 3612.8887145063213,
+          "bytes": 573892
+        },
+        {
+          "cat": {
+            "performance": 87,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "lcp": 2670,
+          "cls": 0,
+          "tbt": 317,
+          "fcp": 1620,
+          "si": 3824.677873471065,
+          "bytes": 414548
+        }
+      ],
+      "median": {
+        "performance": 81,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100,
+        "lcp": 2779,
+        "cls": 0,
+        "tbt": 401.5,
+        "fcp": 1620,
+        "si": 3824.678,
+        "bytes": 414640
+      }
+    },
+    "desktop": {
+      "runs": [
+        {
+          "cat": {
+            "performance": 99,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "lcp": 651.7135000000001,
+          "cls": 0,
+          "tbt": 60.5,
+          "fcp": 444.7135,
+          "si": 1263.596619162455,
+          "bytes": 441864
+        },
+        {
+          "cat": {
+            "performance": 83,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "lcp": 735.588,
+          "cls": 0.0004219414949577432,
+          "tbt": 371,
+          "fcp": 345.08799999999997,
+          "si": 1012.4790725051387,
+          "bytes": 547808
+        },
+        {
+          "cat": {
+            "performance": 87,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "lcp": 717.5,
+          "cls": 0.0004219414949577432,
+          "tbt": 305,
+          "fcp": 350,
+          "si": 1012.2661991013965,
+          "bytes": 547761
+        }
+      ],
+      "median": {
+        "performance": 87,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100,
+        "lcp": 717.5,
+        "cls": 0,
+        "tbt": 305,
+        "fcp": 350,
+        "si": 1012.479,
+        "bytes": 547761
+      }
+    }
+  },
+  "axe": {
+    "mobile": {
+      "violations": 0,
+      "byImpact": {},
+      "list": []
+    },
+    "desktop": {
+      "violations": 0,
+      "byImpact": {},
+      "list": []
+    }
+  },
+  "console": {
+    "mobile": [],
+    "desktop": []
+  },
+  "requests": {
+    "mobile": {
+      "total": 21,
+      "bad": []
+    },
+    "desktop": {
+      "total": 21,
+      "bad": []
+    }
+  }
+}

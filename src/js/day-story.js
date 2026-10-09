@@ -82,8 +82,10 @@ export function setupDayStory({ scrollTo }) {
     jump(Number(a.getAttribute('href').split('-')[1]));
   });
 
-  // three.js nachladen, sobald der Abschnitt näher kommt
-  if (hasWebGL()) {
+  // three.js nachladen, sobald der Abschnitt näher kommt.
+  // Die WebGL-Prüfung (erzeugt einen eigenen GL-Kontext, auf schwachen Geräten teuer) läuft
+  // erst in start(), also nicht während des ersten Seitenaufbaus (wie Konzept 1/3).
+  {
     // erst laden, wenn der Abschnitt naht UND jemand tatsächlich scrollt/interagiert
     // (oder per Deeplink direkt dort landet) – hält den Erstaufruf leicht
     let near = false, engaged = false, started = false;
@@ -91,6 +93,7 @@ export function setupDayStory({ scrollTo }) {
       if (started || !near || !engaged) return;
       started = true;
       io.disconnect();
+      if (!hasWebGL()) return; // ohne WebGL bleibt der CSS-Himmel
       try {
         const { createValley } = await import('../webgl/valley.js');
         scene = createValley($('.day__canvas', section), { mobile: isMobile(), onFirstFrame: () => section.classList.add('is-ready') });
