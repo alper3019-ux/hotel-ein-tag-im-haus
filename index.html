@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Hotel Wolkenstille – Ein Tag im Haus (fiktive Demo)</title>
+  <meta name="description" content="Demo-Website eines fiktiven Boutique-Alpenhotels: Ein Tag im Haus als Scroll-Geschichte von 06:00 bis 23:00 Uhr, Zimmer, Kulinarik, Spa und Direktbuchung. Alle Hotelangaben sind Platzhalter." />
+  <link rel="canonical" href="%VITE_SITE_URL%" />
+  <meta name="theme-color" content="#1f3a2e" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:title" content="Hotel Wolkenstille – Ein Tag im Haus (fiktive Demo)" />
+  <meta property="og:description" content="Scroll-Geschichte durch einen Tag in einem fiktiven Alpenhotel – mit Tageszeit-Szene und Direktbuchungsleiste." />
+  <meta property="og:url" content="%VITE_SITE_URL%" />
+  <meta property="og:image" content="%VITE_SITE_URL%og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preload" href="/src/assets/fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/assets/fonts/fraunces-latin-wght-italic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" as="image" type="image/avif" media="(min-width: 701px)" imagesrcset="%BASE_URL%photos/hero-960.avif 960w, %BASE_URL%photos/hero-1440.avif 1440w, %BASE_URL%photos/hero-1920.avif 1920w, %BASE_URL%photos/hero-2560.avif 2560w" imagesizes="100vw" fetchpriority="high" />
+  <link rel="preload" as="image" type="image/avif" media="(max-width: 700px)" imagesrcset="%BASE_URL%photos/hero-portrait-480.avif 480w, %BASE_URL%photos/hero-portrait-720.avif 720w, %BASE_URL%photos/hero-portrait-840.avif 840w, %BASE_URL%photos/hero-portrait-1080.avif 1080w" imagesizes="100vw" fetchpriority="high" />
+  <link rel="icon" href="%BASE_URL%favicon.ico" sizes="32x32" />
+  <link rel="icon" href="%BASE_URL%favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="%BASE_URL%apple-touch-icon.png" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"Hotel Wolkenstille (fiktive Demo)","url":"%VITE_SITE_URL%","inLanguage":"de","description":"Demonstrationsprojekt: Website eines fiktiven Alpenhotels. Kein echtes Unternehmen."}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+
+  <header class="nav" data-nav>
+    <div class="nav__inner wrap">
+      <a class="nav__logo" href="#top" aria-label="Hotel Wolkenstille, zum Seitenanfang">Hotel Wolkenstille</a>
+      <nav class="nav__links" aria-label="Hauptnavigation">
+        <a href="#tag">Ein Tag</a>
+        <a href="#zimmer">Zimmer</a>
+        <a href="#kulinarik">Kulinarik</a>
+        <a href="#spa">Spa</a>
+        <a href="#umgebung">Umgebung</a>
+        <a href="#angebote">Angebote</a>
+      </nav>
+      <a class="btn btn--ghost nav__cta" href="#buchen" data-open-booking>Direkt buchen</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">Menü</button>
+    </div>
+    <div class="nav__mobile" id="mobile-menu" hidden>
+      <nav aria-label="Mobile Navigation">
+        <a href="#tag">Ein Tag im Haus</a>
+        <a href="#zimmer">Zimmer &amp; Suiten</a>
+        <a href="#kulinarik">Kulinarik</a>
+        <a href="#spa">Spa &amp; Natur</a>
+        <a href="#umgebung">Umgebung</a>
+        <a href="#angebote">Angebote</a>
+        <a href="#anfrage">Anfrage</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__media">
+        <picture>
+          <source media="(max-width: 700px)" type="image/avif" srcset="%BASE_URL%photos/hero-portrait-480.avif 480w, %BASE_URL%photos/hero-portrait-720.avif 720w, %BASE_URL%photos/hero-portrait-840.avif 840w, %BASE_URL%photos/hero-portrait-1080.avif 1080w" sizes="100vw" />
+          <source media="(max-width: 700px)" type="image/webp" srcset="%BASE_URL%photos/hero-portrait-480.webp 480w, %BASE_URL%photos/hero-portrait-720.webp 720w, %BASE_URL%photos/hero-portrait-840.webp 840w, %BASE_URL%photos/hero-portrait-1080.webp 1080w" sizes="100vw" />
+          <source type="image/avif" srcset="%BASE_URL%photos/hero-960.avif 960w, %BASE_URL%photos/hero-1440.avif 1440w, %BASE_URL%photos/hero-1920.avif 1920w, %BASE_URL%photos/hero-2560.avif 2560w" sizes="100vw" />
+          <source type="image/webp" srcset="%BASE_URL%photos/hero-960.webp 960w, %BASE_URL%photos/hero-1440.webp 1440w, %BASE_URL%photos/hero-1920.webp 1920w, %BASE_URL%photos/hero-2560.webp 2560w" sizes="100vw" />
+          <img src="%BASE_URL%photos/hero-1440.webp" width="2560" height="1440" alt="Sonnenaufgang über einem Wiesenweg in den Chiemgauer Alpen, Nebel liegt in den Tälern" fetchpriority="high" />
+        </picture>
+        <div class="hero__shade" aria-hidden="true"></div>
+      </div>
+      <div class="hero__content wrap">
+        <p class="eyebrow">Boutique-Hotel · Alpen · <span class="ph">[Anzahl]</span> Zimmer</p>
+        <h1 id="hero-title" class="hero__title" data-split>Ankommen,<br />bevor du <em>anreist.</em></h1>
+        <p class="hero__lead">Ein Tag im Haus – vom ersten Licht bis zum letzten Glas am Kamin. Gescrollt, nicht geblättert.</p>
+        <ul class="hero__times" aria-label="Stationen des Tages">
+          <li><a href="#station-0">06:00 Morgen</a></li>
+          <li><a href="#station-2">12:00 Berg</a></li>
+          <li><a href="#station-3">17:00 Spa</a></li>
+          <li><a href="#station-4">20:00 Tisch</a></li>
+          <li><a href="#station-5">23:00 Stille</a></li>
+        </ul>
+      </div>
+      <p class="fiction-badge" role="note">Fiktive Marke · Demo</p>
+      <p class="photo-note">Foto: Diego Delso, CC BY-SA 4.0 · Symbolbild, nicht das Hotel</p>
+    </section>
+
+    <!-- BUCHUNG (einziges Buchungsformular; wird im Dialog wiederverwendet) -->
+    <div class="booking-slot wrap" id="buchen">
+      <form class="booking" id="booking" novalidate aria-labelledby="booking-title">
+        <h2 class="visually-hidden" id="booking-title">Verfügbarkeit prüfen</h2>
+        <div class="booking__field">
+          <label for="arrive">Anreise</label>
+          <input id="arrive" name="arrive" type="date" required aria-describedby="booking-status" />
+        </div>
+        <div class="booking__field">
+          <label for="depart">Abreise</label>
+          <input id="depart" name="depart" type="date" required aria-describedby="booking-status" />
+        </div>
+        <div class="booking__field">
+          <label for="adults">Erwachsene</label>
+          <select id="adults" name="adults">
+            <option>1</option><option selected>2</option><option>3</option><option>4</option>
+          </select>
+        </div>
+        <div class="booking__field">
+          <label for="kids">Kinder</label>
+          <select id="kids" name="kids">
+            <option selected>0</option><option>1</option><option>2</option><option>3</option>
+          </select>
+        </div>
+        <button class="btn btn--solid booking__submit" type="submit">Verfügbarkeit prüfen</button>
+        <p class="booking__status" id="booking-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <!-- EIN TAG IM HAUS -->
+    <section class="day" id="tag" aria-labelledby="day-title">
+      <div class="day__stage" data-day-stage>
+        <div class="day__sky" aria-hidden="true"></div>
+        <canvas class="day__canvas" aria-hidden="true"></canvas>
+        <div class="day__hud wrap">
+          <div class="day__head">
+            <p class="eyebrow">01 · Ein Tag im Haus</p>
+            <h2 id="day-title" class="day__title">Von 06:00 bis 23:00 Uhr</h2>
+            <p class="day__clock" aria-hidden="true"><span data-clock>06:00</span></p>
+            <p class="day__hint">Scrollen Sie durch den Tag – Licht, Himmel und Fenster folgen der Uhrzeit.</p>
+          </div>
+          <ol class="day__stations" data-stations>
+            <li class="station" id="station-0" data-time="6">
+              <article class="station__card">
+                <x-pic name="morgen" sizes="(max-width: 700px) 40vw, 260px" alt="Bergsee am frühen Morgen, der Gipfel spiegelt sich im ruhigen Wasser"></x-pic>
+                <div class="station__body">
+                  <p class="station__time">06:00 · Morgen</p>
+                  <h3>Erstes Licht am See</h3>
+                  <p>Der Nebel liegt noch über dem Wasser. Tee steht ab sechs im Kaminzimmer, die Morgenrunde am Ufer dauert eine knappe Stunde.</p>
+                  <a class="link" href="#zimmer" data-room-link="stube">Passend: Zirbenstube mit Seeblick</a>
+                </div>
+              </article>
+            </li>
+            <li class="station" id="station-1" data-time="8">
+              <article class="station__card">
+                <x-pic name="fruehstueck" sizes="(max-width: 700px) 40vw, 260px" alt="Gedeckter Frühstückstisch vor einem Sprossenfenster mit Blick ins Grüne"></x-pic>
+                <div class="station__body">
+                  <p class="station__time">08:00 · Frühstück</p>
+                  <h3>Frühstück am Fenster</h3>
+                  <p>Brot aus dem Tal, Käse von der Alm, Eier, wie Sie sie mögen. Wer lieber spät isst: Das Frühstück läuft bis <span class="ph">[Uhrzeit]</span>.</p>
+                  <a class="link" href="#kulinarik">Zur Kulinarik</a>
+                </div>
+              </article>
+            </li>
+            <li class="station" id="station-2" data-time="12">
+              <article class="station__card">
+                <x-pic name="berg" sizes="(max-width: 700px) 40vw, 260px" alt="Kühe auf einer Almwiese vor schroffen Dolomitengipfeln"></x-pic>
+                <div class="station__body">
+                  <p class="station__time">12:00 · Berg</p>
+                  <h3>Mittag auf der Alm</h3>
+                  <p>Drei Routen starten direkt am Haus. Die Rezeption packt Proviant und gibt die Wetterlage für den Nachmittag mit.</p>
+                  <a class="link" href="#umgebung">Routen ansehen</a>
+                </div>
+              </article>
+            </li>
+            <li class="station" id="station-3" data-time="17">
+              <article class="station__card">
+                <x-pic name="spa" sizes="(max-width: 700px) 40vw, 260px" alt="Holzsauna mit warmem Licht und Liegebänken"></x-pic>
+                <div class="station__body">
+                  <p class="station__time">17:00 · Spa</p>
+                  <h3>Wärme nach dem Gipfel</h3>
+                  <p>Die Sonne steht tief, im Spa-Flügel gehen die ersten Lichter an. Sauna, Ruheraum, danach ein Glas Bergkräutertee.</p>
+                  <a class="link" href="#angebote" data-offer-link="stille">Paket: Stille Tage</a>
+                </div>
+              </article>
+            </li>
+            <li class="station" id="station-4" data-time="20">
+              <article class="station__card">
+                <x-pic name="tisch" sizes="(max-width: 700px) 40vw, 260px" alt="Festlich gedeckter Tisch mit weißer Tischdecke in einem hellen Speisesaal"></x-pic>
+                <div class="station__body">
+                  <p class="station__time">20:00 · Tisch</p>
+                  <h3>Abendessen in fünf Gängen</h3>
+                  <p>Das Haus leuchtet von innen. Das Menü wechselt täglich; Allergien und Wünsche nehmen wir schon bei der Buchung auf.</p>
+                  <a class="link" href="#kulinarik">Menü ansehen</a>
+                </div>
+              </article>
+            </li>
+            <li class="station" id="station-5" data-time="23">
+              <article class="station__card">
+                <x-pic name="stille" sizes="(max-width: 700px) 40vw, 260px" alt="Verschneite Berge unter einem Sternenhimmel mit Sternspuren"></x-pic>
+                <div class="station__body">
+                  <p class="station__time">23:00 · Stille</p>
+                  <h3>Nur noch Sterne</h3>
+                  <p>Die meisten Fenster sind dunkel. Kein Verkehr, kein Lift, nur der Bach. Die Suite unterm Dach hat ein Fenster zum Himmel.</p>
+                  <a class="link" href="#zimmer" data-room-link="suite">Passend: Dachsuite</a>
+                </div>
+              </article>
+            </li>
+          </ol>
+          <div class="day__timeline" aria-label="Zur Tageszeit springen">
+            <div class="day__track" aria-hidden="true"><span class="day__fill" data-fill></span></div>
+            <ul class="day__ticks">
+              <li><a href="#station-0" data-tick="0">06:00</a></li>
+              <li><a href="#station-1" data-tick="1">08:00</a></li>
+              <li><a href="#station-2" data-tick="2">12:00</a></li>
+              <li><a href="#station-3" data-tick="3">17:00</a></li>
+              <li><a href="#station-4" data-tick="4">20:00</a></li>
+              <li><a href="#station-5" data-tick="5">23:00</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="day__credit">3D-Szene: prozedural erzeugt (three.js), Himmel nach dem Preetham-Modell (three.js „Sky“). Fotos: Symbolbilder, siehe Bildrechte.</p>
+      </div>
+    </section>
+
+    <!-- ZIMMER -->
+    <section class="section rooms" id="zimmer" aria-labelledby="rooms-title">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">02 · Zimmer &amp; Suiten</p>
+          <h2 id="rooms-title" class="section__title" data-reveal>Drei Arten, <em>still</em> zu wohnen.</h2>
+          <p class="section__lead" data-reveal>Alle Zimmer mit Holzböden, Daunendecken und Fenstern, die sich öffnen lassen. Preise und Größen sind Platzhalter.</p>
+        </header>
+        <ul class="rooms__grid">
+          <li class="room" data-room="stube" data-reveal>
+            <button class="room__open" type="button" aria-haspopup="dialog" data-room-open="stube">
+              <span class="room__media">
+                <x-pic name="zimmer-stube" sizes="(max-width: 900px) 92vw, 30vw" alt="Gästezimmer mit bemaltem Holzbett, grünen Wänden und Sprossenfenster"></x-pic>
+              </span>
+              <span class="room__meta">
+                <span class="room__name">Zirbenstube</span>
+                <span class="room__facts"><span class="ph">[28]</span> m² · bis 2 Personen · Seeblick</span>
+                <span class="room__price">ab <span class="ph">[Preis]</span> € / Nacht</span>
+                <span class="room__more" aria-hidden="true">Details ansehen</span>
+              </span>
+            </button>
+          </li>
+          <li class="room" data-room="suite" data-reveal>
+            <button class="room__open" type="button" aria-haspopup="dialog" data-room-open="suite">
+              <span class="room__media">
+                <x-pic name="zimmer-suite" sizes="(max-width: 900px) 92vw, 30vw" alt="Himmelbett mit weißen Vorhängen in einer hellen Suite"></x-pic>
+              </span>
+              <span class="room__meta">
+                <span class="room__name">Dachsuite</span>
+                <span class="room__facts"><span class="ph">[46]</span> m² · bis 3 Personen · Himmelsfenster</span>
+                <span class="room__price">ab <span class="ph">[Preis]</span> € / Nacht</span>
+                <span class="room__more" aria-hidden="true">Details ansehen</span>
+              </span>
+            </button>
+          </li>
+          <li class="room" data-room="bad" data-reveal>
+            <button class="room__open" type="button" aria-haspopup="dialog" data-room-open="bad">
+              <span class="room__media">
+                <x-pic name="zimmer-bad" sizes="(max-width: 900px) 92vw, 30vw" alt="Freistehende Badewanne in einem hellen Raum mit hohen Fenstern"></x-pic>
+              </span>
+              <span class="room__meta">
+                <span class="room__name">Bad-Suite</span>
+                <span class="room__facts"><span class="ph">[52]</span> m² · bis 2 Personen · freistehende Wanne</span>
+                <span class="room__price">ab <span class="ph">[Preis]</span> € / Nacht</span>
+                <span class="room__more" aria-hidden="true">Details ansehen</span>
+              </span>
+            </button>
+          </li>
+        </ul>
+        <p class="note">Fotos: Symbolbilder von Wikimedia Commons (u. a. Museum Alte Schmiede Schönberg am Kamp; Amantaka, Luang Prabang). Sie zeigen nicht das fiktive Hotel.</p>
+      </div>
+      <dialog class="room-dialog" id="room-dialog" aria-labelledby="room-dialog-title">
+        <div class="room-dialog__inner">
+          <div class="room-dialog__media" data-room-media></div>
+          <div class="room-dialog__body">
+            <p class="eyebrow">Zimmer &amp; Suiten</p>
+            <h3 id="room-dialog-title" data-room-title>Zimmer</h3>
+            <p data-room-text></p>
+            <ul class="room-dialog__list" data-room-list></ul>
+            <p class="room-dialog__price" data-room-price></p>
+            <div class="room-dialog__actions">
+              <button class="btn btn--solid" type="button" data-open-booking>Zeitraum wählen</button>
+              <button class="btn btn--ghost-dark" type="button" data-close>Schließen</button>
+            </div>
+          </div>
+        </div>
+      </dialog>
+    </section>
+
+    <!-- KULINARIK -->
+    <section class="section food" id="kulinarik" aria-labelledby="food-title">
+      <div class="wrap food__grid">
+        <div class="food__media" data-parallax>
+          <x-pic name="kulinarik" sizes="(max-width: 900px) 92vw, 45vw" alt="Angerichteter Teller mit Kalbfleisch, Jus, Pastinaken und Kartoffelkrapfen"></x-pic>
+        </div>
+        <div class="food__text">
+          <p class="eyebrow">03 · Kulinarik</p>
+          <h2 id="food-title" class="section__title" data-reveal>Kochen mit dem, <em>was das Tal</em> hergibt.</h2>
+          <p class="section__lead" data-reveal>Ein Abendmenü, das jeden Tag neu geschrieben wird. Beispielhaft für heute:</p>
+          <ol class="menu" data-reveal>
+            <li><span>Saibling aus dem Bergsee, Kren, Gurke</span></li>
+            <li><span>Klare Suppe vom Almochsen</span></li>
+            <li><span>Kalb, Trüffeljus, Pastinake</span></li>
+            <li><span>Bergkäse vom Wagen</span></li>
+            <li><span>Zirbe, Rahm, Waldbeeren</span></li>
+          </ol>
+          <p class="note">Beispielmenü (fiktiv). Küchenchef, Produzenten und Auszeichnungen: <span class="ph">[werden mit dem echten Haus ergänzt]</span>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPA -->
+    <section class="section spa" id="spa" aria-labelledby="spa-title">
+      <div class="spa__media">
+        <x-pic name="spa-wide" sizes="100vw" alt="Holzsauna mit warmem Licht"></x-pic>
+      </div>
+      <div class="wrap spa__content">
+        <p class="eyebrow">04 · Spa &amp; Natur</p>
+        <h2 id="spa-title" class="section__title" data-reveal>Wärme drinnen, <em>Kälte</em> draußen.</h2>
+        <ul class="facts" data-reveal>
+          <li><strong>Sauna</strong><span>Finnisch, Kräuter und Dampfbad</span></li>
+          <li><strong>Ruheraum</strong><span>Mit Blick auf <span class="ph">[Gipfelname]</span></span></li>
+          <li><strong>Bergsee</strong><span>Baden im Sommer, Eisbaden nur mit Begleitung</span></li>
+          <li><strong>Öffnung</strong><span><span class="ph">[Öffnungszeiten]</span></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- UMGEBUNG -->
+    <section class="section around" id="umgebung" aria-labelledby="around-title">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">05 · Umgebung</p>
+          <h2 id="around-title" class="section__title" data-reveal>Drei Wege ab der <em>Haustür</em>.</h2>
+          <p class="section__lead" data-reveal>Illustrierte Karte mit Beispielrouten. Orte, Distanzen und Höhenmeter sind erfunden und nicht zur Navigation geeignet.</p>
+        </header>
+        <div class="around__grid">
+          <figure class="map" aria-labelledby="map-caption">
+            <svg class="map__svg" viewBox="0 0 800 520" role="img" aria-labelledby="map-svg-title map-svg-desc">
+              <title id="map-svg-title">Illustrierte Karte des Tals</title>
+              <desc id="map-svg-desc">Das Hotel liegt am Nordufer eines Sees. Drei Beispielrouten führen am See entlang, auf die Alm und auf den Gipfel.</desc>
+              <defs>
+                <linearGradient id="mapBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9e3d6"/><stop offset="1" stop-color="#ddd5c3"/></linearGradient>
+                <pattern id="trees" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M11 3 16 13H6Z" fill="#7d9474" opacity=".55"/></pattern>
+              </defs>
+              <rect width="800" height="520" fill="url(#mapBg)"/>
+              <path d="M0 140 C120 60 210 120 300 70 S470 10 560 60 S720 40 800 70 V0 H0Z" fill="#cfc6b2"/>
+              <path d="M520 40 600 150 650 90 720 200 800 120 V0 H470Z" fill="#b9b19c"/>
+              <path d="M600 150 650 90 690 150Z" fill="#f4f1ea"/>
+              <path d="M0 380 C140 330 230 420 360 380 S600 300 800 360 V520 H0Z" fill="url(#trees)"/>
+              <path d="M210 250 C260 205 380 200 450 230 C520 260 520 320 450 340 C360 365 250 345 215 310 C195 290 195 265 210 250Z" fill="#9fb8c2"/>
+              <path d="M450 340 C520 380 600 420 700 520" stroke="#9fb8c2" stroke-width="8" fill="none" stroke-linecap="round"/>
+              <g class="map__routes">
+                <path class="route" data-route="see" d="M330 196 C260 200 205 240 214 290 C225 335 330 360 420 345 C500 330 520 270 470 228 C430 198 380 192 330 196Z"/>
+                <path class="route" data-route="alm" d="M330 196 C320 160 290 140 250 120 C210 100 170 110 140 90"/>
+                <path class="route" data-route="gipfel" d="M330 196 C380 160 440 150 500 140 C560 128 600 120 650 92"/>
+              </g>
+              <g class="map__pins" font-family="inherit">
+                <g transform="translate(330 196)"><rect x="-13" y="-22" width="26" height="18" rx="2" fill="#1f3a2e"/><path d="M-16 -22 0 -34 16 -22Z" fill="#1f3a2e"/><rect x="-7" y="-17" width="5" height="5" fill="#f2c14e"/><rect x="2" y="-17" width="5" height="5" fill="#f2c14e"/><text x="18" y="-4" class="map__label">Hotel</text></g>
+                <g transform="translate(140 90)"><circle r="6" fill="#b4532a"/><text x="10" y="-8" class="map__label">Obere Alm</text></g>
+                <g transform="translate(650 92)"><circle r="6" fill="#b4532a"/><text x="-30" y="-12" class="map__label">Gipfel</text></g>
+                <text x="300" y="285" class="map__label map__label--water">Bergsee</text>
+              </g>
+            </svg>
+            <figcaption id="map-caption" class="note">Illustration (eigene Grafik, fiktive Landschaft).</figcaption>
+          </figure>
+          <div class="routes">
+            <div class="routes__buttons" role="group" aria-label="Route hervorheben">
+              <button type="button" class="chip" aria-pressed="true" data-route-btn="see">Morgenrunde am See</button>
+              <button type="button" class="chip" aria-pressed="false" data-route-btn="alm">Almweg</button>
+              <button type="button" class="chip" aria-pressed="false" data-route-btn="gipfel">Gipfeltour</button>
+            </div>
+            <dl class="routes__info" aria-live="polite" data-route-info>
+              <div><dt>Strecke</dt><dd data-r="km">4,2 km</dd></div>
+              <div><dt>Höhenmeter</dt><dd data-r="hm">60 hm</dd></div>
+              <div><dt>Gehzeit</dt><dd data-r="t">ca. 1 Std.</dd></div>
+            </dl>
+            <p class="routes__text" data-r="text">Einmal um den See, flach und auch im Morgennebel gut zu gehen.</p>
+            <p class="note">Beispielwerte, frei erfunden.</p>
+            <div class="routes__photo">
+              <x-pic name="gipfel" sizes="(max-width: 900px) 92vw, 34vw" alt="Grasige Hänge und felsige Gipfel in den Stubaier Alpen unter Wolken"></x-pic>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANGEBOTE -->
+    <section class="section offers" id="angebote" aria-labelledby="offers-title">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">06 · Angebote &amp; Direktbuchung</p>
+          <h2 id="offers-title" class="section__title" data-reveal>Direkt beim Haus <em>buchen</em>.</h2>
+          <p class="section__lead" data-reveal>Pakete als Beispiel. Inhalte und Preise sind Platzhalter, bis das echte Hotel sie liefert.</p>
+        </header>
+        <ul class="offers__grid">
+          <li class="offer" id="paket-stille" data-reveal>
+            <h3>Stille Tage</h3>
+            <p class="offer__nights">3 Nächte</p>
+            <ul><li>Halbpension</li><li>Eine Sauna-Zeremonie für zwei</li><li>Später Check-out</li></ul>
+            <p class="offer__price">ab <span class="ph">[Preis]</span> € p. P.</p>
+            <button class="btn btn--solid" type="button" data-open-booking>Zeitraum wählen</button>
+          </li>
+          <li class="offer offer--accent" id="paket-gipfel" data-reveal>
+            <h3>Gipfeltage</h3>
+            <p class="offer__nights">4 Nächte</p>
+            <ul><li>Halbpension mit Proviant</li><li>Geführte Tour (<span class="ph">[Bergführer:in]</span>)</li><li>Leihausrüstung</li></ul>
+            <p class="offer__price">ab <span class="ph">[Preis]</span> € p. P.</p>
+            <button class="btn btn--solid" type="button" data-open-booking>Zeitraum wählen</button>
+          </li>
+          <li class="offer" id="paket-tisch" data-reveal>
+            <h3>Langer Tisch</h3>
+            <p class="offer__nights">2 Nächte</p>
+            <ul><li>Zwei Abendmenüs mit Weinbegleitung</li><li>Frühstück bis Mittag</li><li>Ein Kochkurs am Nachmittag</li></ul>
+            <p class="offer__price">ab <span class="ph">[Preis]</span> € p. P.</p>
+            <button class="btn btn--solid" type="button" data-open-booking>Zeitraum wählen</button>
+          </li>
+        </ul>
+        <p class="note">Hinweis zur Technik: Die Buchungsleiste ist hier eine ehrliche Attrappe. Im echten Projekt wird an dieser Stelle die Buchungsengine des Hotels angebunden. Diese Demo prüft keine Verfügbarkeit und reserviert nichts.</p>
+      </div>
+    </section>
+
+    <!-- ANFRAGE -->
+    <section class="section contact" id="anfrage" aria-labelledby="contact-title">
+      <div class="wrap contact__grid">
+        <div>
+          <p class="eyebrow">07 · Anfrage</p>
+          <h2 id="contact-title" class="section__title">Fragen vor der <em>Anreise</em>?</h2>
+          <p class="section__lead">Hunde, Allergien, Anreise mit der Bahn: Schreiben Sie uns, bevor Sie buchen.</p>
+          <address class="contact__addr">
+            Hotel Wolkenstille (fiktiv)<br />
+            <span class="ph">[Straße Hausnummer]</span><br />
+            <span class="ph">[PLZ Ort]</span><br />
+            <span class="ph">[Telefon]</span>
+          </address>
+        </div>
+        <form class="form" id="contact-form" novalidate aria-labelledby="contact-title">
+          <div class="field">
+            <label for="c-name">Name</label>
+            <input id="c-name" name="name" type="text" autocomplete="name" required aria-describedby="c-name-err" />
+            <p class="field__err" id="c-name-err">Bitte geben Sie Ihren Namen an.</p>
+          </div>
+          <div class="field">
+            <label for="c-mail">E-Mail</label>
+            <input id="c-mail" name="email" type="email" autocomplete="email" required aria-describedby="c-mail-err" />
+            <p class="field__err" id="c-mail-err">Bitte geben Sie eine gültige E-Mail-Adresse an.</p>
+          </div>
+          <div class="field">
+            <label for="c-msg">Nachricht</label>
+            <textarea id="c-msg" name="message" rows="5" required aria-describedby="c-msg-err"></textarea>
+            <p class="field__err" id="c-msg-err">Bitte schreiben Sie uns kurz, worum es geht.</p>
+          </div>
+          <div class="check">
+            <input id="c-privacy" name="privacy" type="checkbox" required aria-describedby="c-privacy-err" />
+            <label for="c-privacy">Ich habe die <a href="%BASE_URL%datenschutz.html">Datenschutzhinweise</a> gelesen.</label>
+            <p class="field__err" id="c-privacy-err">Bitte bestätigen Sie die Datenschutzhinweise.</p>
+          </div>
+          <p class="form__note">Demo-Version: Dieses Formular sendet und speichert keine Daten.</p>
+          <button class="btn btn--solid" type="submit">Anfrage senden</button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Buchungs-Dock (erscheint nach dem Hero) -->
+  <div class="dock" data-dock hidden>
+    <p class="dock__summary" data-dock-summary>Zeitraum wählen</p>
+    <button class="btn btn--solid dock__btn" type="button" data-open-booking>Verfügbarkeit prüfen</button>
+  </div>
+  <dialog class="booking-dialog" id="booking-dialog" aria-labelledby="booking-dialog-title">
+    <div class="booking-dialog__head">
+      <h2 id="booking-dialog-title">Direkt buchen</h2>
+      <button class="btn btn--ghost-dark" type="button" data-close>Schließen</button>
+    </div>
+    <div class="booking-dialog__slot" data-booking-dialog-slot></div>
+  </dialog>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <p class="footer__logo">Hotel Wolkenstille</p>
+        <p class="footer__fiction"><strong>Fiktives Hotel.</strong> Diese Website ist ein Demonstrationsprojekt. Name, Adresse, Zimmer, Preise, Menü, Routen und Pakete sind erfunden bzw. Platzhalter. Es gibt keine Auszeichnungen und keine Gästestimmen, weil es kein echtes Haus gibt.</p>
+      </div>
+      <nav class="footer__legal" aria-label="Rechtliches">
+        <a href="%BASE_URL%impressum.html">Impressum</a>
+        <a href="%BASE_URL%datenschutz.html">Datenschutz</a>
+        <a href="%BASE_URL%bildrechte.html">Bildrechte</a>
+      </nav>
+    </div>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
