@@ -44,7 +44,7 @@ bash scripts/deploy-gh-pages.sh   # Build + normaler Push auf gh-pages (kein Act
 
 Lighthouse 13 (Median aus 3 Läufen, Chrome headless mit SwiftShader auf einer geteilten Linux-Box – die Performance-Werte schwanken deutlich zwischen Läufen) und axe-core 4 (WCAG 2.0/2.1/2.2 A+AA + Best Practices, nach Durchscrollen).
 
-**Live (GitHub Pages, gemessen 09.10.2026 gegen ~13:40 Uhr MESZ):**
+**Live (GitHub Pages, gemessen 09.10.2026 gegen 13:25 Uhr MESZ):**
 
 | | Performance | Accessibility | Best Practices | SEO | FCP | LCP | TBT | CLS |
 |---|---|---|---|---|---|---|---|---|
